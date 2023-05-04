@@ -113,7 +113,7 @@ namespace http
                         }
         }
         string TcpServer::buildResponse(){
-                string htmlFile = "<!DOCTYPE html><html lang=\"en\"><body><h1> HOME </h1><p> Hello from your Server :) </p></body></html>";
+                string htmlFile = "<!DOCTYPE html><html lang=\"en\"><body><h1> HTTP-webserver-from-scratch </h1><p> Listening from server on port 8080! </p></body></html>";
                 ostringstream ss;
                 ss << "HTTP/1.1 200 OK\nContent-Type: text/html\nContent-Length: " << htmlFile.size() << "\n\n"<< htmlFile;
                 return ss.str();
